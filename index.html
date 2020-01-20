@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RPS Online</title>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="../RPS-Online/assets/javascript/javascript.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="../RPS-Online/assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -16,6 +14,9 @@
         <form>
             <input class="form-group" id="chatInput" placeholder="Enter a message..." type="text">
         </form>
+        <div class="chatarea">
+
+        </div>
     </div>
     <!-- Container for divs -->
     <div class="container">
@@ -27,11 +28,11 @@
     <!-- Check if player is one or two -->
     <div class="container">
         <div class="row justify-content-end">
-            <div class="col-1 smallbox">
-                <input type="checkbox" name="player1" value = "false"> Play 1
-            </div>
-            <div class="col-1 smallbox">
-                <input type="checkbox" name="player2" value = "false"> Play 2
+            <div class="col-2 smallbox">
+                <form>
+                    <input type="radio" name="playerNum" id=playerCheck value="1"> Player 1
+                    <input type="radio" name="playerNum" id=playerCheck2 value="2"> Player 2
+                </form>
             </div>
         </div>
         <!-- Result row -->
@@ -45,21 +46,23 @@
             <div class="col choice">
                 <img src="../RPS-Online/assets/images/rock.png" alt="Rock" height="250" width="250">
                 <br>
-                <button class="btn" id = "buttonSelect">Rock</button>
+                <button class="btn" id = "buttonSelect" value="rock">Rock</button>
             </div>
             <div class="col choice">
                 <img src="../RPS-Online/assets/images/paper.jpeg" alt="Paper" height="250" width="250">
                 <br>
-                <button class="btn" id = "buttonSelect">Paper</button>
+                <button class="btn" id = "buttonSelect" value="paper">Paper</button>
             </div>
             <div class="col choice">
                 <img src="../RPS-Online/assets/images/scissors.jpeg" alt="Scissors" height="250" width="250">
                 <br>
-                <button class="btn" id = "buttonSelect">Scissors</button>
+                <button class="btn" id = "buttonSelect" value="scissors">Scissors</button>
             </div>
         </div>
     </div>
-
-    
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../RPS-Online/assets/javascript/javascript.js"></script>
 </body>
 </html>
