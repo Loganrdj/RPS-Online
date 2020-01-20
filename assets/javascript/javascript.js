@@ -1,3 +1,4 @@
+var playerRef = "";
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCKDcachb6ml-mURyMAIfQP_06RMM2Yy1I",
@@ -17,10 +18,12 @@ var database = firebase.database();
 $("#playerCheck").on("click", function(){
     var playerNum = $("input[name='playerNum']:checked").val();
     console.log(playerNum)
+    // database.ref(playerNum).push({  })
 });
 $("#playerCheck2").on("click", function(){
     var playerNum = $("input[name='playerNum']:checked").val();
     console.log(playerNum)
+    // database.ref(playerNum).push({  })
 });
 
 $(".btn").on("click", function(){
@@ -32,11 +35,15 @@ chatbox.keydown(function(event){
     if(event.keyCode == 13){
         event.preventDefault();
         // Create a new p tag
-
+        message = chatbox.val();
         // If player one or two is checked, add to player one or two
-        p = $("<p>");
-        p.html(chatbox.val())
-        $(".chatarea").prepend(p);
+        // p = $("<p>");
+        // p.html(chatbox.val())
+        // $(".chatarea").prepend(p);
+
+        database.ref(`chat`).push({  
+            message: message
+        })
     }
 })
 
