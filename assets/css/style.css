@@ -1,4 +1,48 @@
-.title{
+.title, #title{
     text-align: center;
     font-size: 40px;
+    background: gray;
+    color: white;
+}
+.smallbox{
+    border: 3px solid white;
+    border-radius: 5px;
+    font-size: 15px;
+    background: gray;
+    color: white;
+}
+.choice{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 7px;
+    background: gray;
+    padding: 50px;
+    color: white;
+}
+#buttonSelect{
+    color: white;
+    background-color: black;
+}
+
+
+body{
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    display: block;
+    color: #fff;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

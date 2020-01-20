@@ -16,7 +16,30 @@
     <div class="container">
         <!-- Title box -->
         <div class = "title">
-            <p class="jumbotron title">Rock Paper Scissors Online</p>
+            <p class="jumbotron title" id="title">Rock Paper Scissors Online</p>
+        </div>
+    </div>
+    <!-- Check if player is one or two -->
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-1 smallbox">
+                <input type="checkbox" name="player1" value = "false"> Play 1
+            </div>
+            <div class="col-1 smallbox">
+                <input type="checkbox" name="player2" value = "false"> Play 2
+            </div>
+        </div>
+        <!-- Player's selection -->
+        <div class="row">
+            <div class="col choice">
+                <button class="btn" id = "buttonSelect">Rock</button>
+            </div>
+            <div class="col choice">
+                <button class="btn" id = "buttonSelect">Paper</button>
+            </div>
+            <div class="col choice">
+                <button class="btn" id = "buttonSelect">Scissors</button>
+            </div>
         </div>
     </div>
 </body>
