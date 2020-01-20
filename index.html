@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+    <div class="chat">
+        <form>
+            <input class="form-group" id="chatInput" placeholder="Enter a message..." type="text">
+        </form>
+    </div>
     <!-- Container for divs -->
     <div class="container">
         <!-- Title box -->
@@ -29,18 +34,32 @@
                 <input type="checkbox" name="player2" value = "false"> Play 2
             </div>
         </div>
+        <!-- Result row -->
+        <div class="row justify-content-md-center">
+            <div class="col col-md-auto">
+                <!-- Results go here & add class choice -->
+            </div>
+        </div>
         <!-- Player's selection -->
         <div class="row">
             <div class="col choice">
+                <img src="../RPS-Online/assets/images/rock.png" alt="Rock" height="250" width="250">
+                <br>
                 <button class="btn" id = "buttonSelect">Rock</button>
             </div>
             <div class="col choice">
+                <img src="../RPS-Online/assets/images/paper.jpeg" alt="Paper" height="250" width="250">
+                <br>
                 <button class="btn" id = "buttonSelect">Paper</button>
             </div>
             <div class="col choice">
+                <img src="../RPS-Online/assets/images/scissors.jpeg" alt="Scissors" height="250" width="250">
+                <br>
                 <button class="btn" id = "buttonSelect">Scissors</button>
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>

@@ -4,6 +4,9 @@
     background: gray;
     color: white;
 }
+#title{
+    border: 2px solid;
+}
 .smallbox{
     border: 3px solid white;
     border-radius: 5px;
@@ -24,6 +27,18 @@
     background-color: black;
 }
 
+.chat{
+    float: left;
+    background: white;
+    height: 350px;
+    width: 260px;
+    position: sticky;
+    top: 0;
+    border: 2px solid black;
+}
+#chatInput{
+    width: 250px;
+}
 
 body{
     /* background-repeat: no-repeat; */
